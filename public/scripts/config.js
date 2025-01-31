@@ -1,0 +1,5 @@
+const config = {
+    GOOGLE_API_KEY:"AIzaSyDyT8sR-iaKapHI479DtcGrOfRE2WbuE7Y",
+
+    WEATHERSTACK_API_KEY:"e4ecc36ad7c7832169ff5a7597cd8215"
+}
