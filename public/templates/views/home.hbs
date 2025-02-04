@@ -1,0 +1,74 @@
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="icon" href="https://cdn.weatherapi.com/weather/64x64/day/116.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Home</title>
+  </head>
+
+  <body>
+    <h1>Weather Dashboard</h1>
+    <div class="container">
+      <div class="weather-input">
+        <h3>Enter a city name</h3>
+        <form>
+          <input
+            class="city-input"
+            type="text"
+            placeholder="E.g., Cairo, Brussels, Berlin"
+          />
+          <button class="search-button">Search</button></form>
+
+        <div class="separator"></div>
+        <button class="location-button">Use current location</button>
+
+      </div>
+      <div class="weather-data">
+        <div class="current-weather">
+          <div class="details">
+            <h2>________ (____________)</h2>
+            <h4>Temp: _____°C</h4>
+            <h4>Wind: ____ m/s</h4>
+            <h4>Humidity: ____%</h4>
+          </div>
+          <div class="icon">
+            <img
+              src="https://cdn.weatherapi.com/weather/64x64/day/116.png"
+            />
+            <h4></h4>
+          </div>
+        </div>
+        <div class="days-forecast">
+          <h2>2-Days Forecast</h2>
+          <ul class="weather-cards">
+            <li class="card">
+              <h3>(____________)</h3>
+              <img
+                src="https://cdn.weatherapi.com/weather/64x64/day/116.png"
+                alt="weather-icon"
+              />
+              <h4>Temp: _____°C</h4>
+              <h4>Wind: ____ m/s</h4>
+              <h4>Humidity: ____%</h4>
+            </li>
+            <li class="card">
+              <h3>(____________)</h3>
+              <img
+                src="https://cdn.weatherapi.com/weather/64x64/day/116.png"
+                alt="weather-icon"
+              />
+              <h4>Temp: _____°C</h4>
+              <h4>Wind: ____ m/s</h4>
+              <h4>Humidity: ____%</h4>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./scripts/script.js" ></script>
+  </body>
+
+</html>

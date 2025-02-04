@@ -113,11 +113,13 @@ background: #6c757d;
 .current-weather .icon img{
     margin-top: 20px;
     margin-right: 30px;
+
 }
 
 .current-weather .icon h4{
     margin-top: 30px;
-    width:64px;
+    margin-left: 10px;
+    width:55px;
     text-transform: capitalize;
     font-weight: 800;
 
@@ -151,6 +153,7 @@ background: #6c757d;
     padding: 10px 15px 10px 15px;
     border-radius:5px;
     min-width:fit-content;
+    flex:1;
 }
 
 .weather-cards .card img{
@@ -173,7 +176,7 @@ background: #6c757d;
     .weather-cards .card{
         flex-basis:133px;
         flex-shrink:0;
-        max-width:200;
+        flex:1;
 
     }
 }
@@ -188,7 +191,7 @@ background: #6c757d;
         flex-basis:133px;
 
         flex-shrink:0;
-        max-width:200;
+        flex:1;
 
     }
 }
@@ -203,7 +206,7 @@ background: #6c757d;
     .weather-cards .card{
         flex-basis:133px;
         flex-shrink:0;
-        max-width:200;
+        flex:1;
 
 
     }  
@@ -219,7 +222,7 @@ background: #6c757d;
     .weather-cards .card{
         flex-basis:133px;
         flex-shrink:0;
-        max-width:200;
+        flex: 1;
 
     }
 }
