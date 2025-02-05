@@ -1,7 +1,5 @@
 const express = require("express");
 
-const request = require('request')
-
 const path = require("path");
 
 const hbs = require("hbs");
