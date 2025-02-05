@@ -14,7 +14,8 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "hbs": "^4.2.0",
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "reuqest": "^2.81.1"
   },
   "devDependencies": {
     "webpack": "^5.97.1",
