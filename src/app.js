@@ -4,9 +4,9 @@ const path = require("path");
 
 const hbs = require("hbs");
 
-const geocode = require("./utils/geocode");
+const geocode = require("./utils/geocode.js");
 
-const forecast = require("./utils/forecast");
+const forecast = require("./utils/forecast.js");
 
 const viewsPath = path.join(__dirname, "../public/templates/views");
 

@@ -1,6 +1,6 @@
 const request = require('request')
 
-const config = require("./config")
+const config = require("./config.js")
 
 const getCityCoordinates=(city)=>{
     return new Promise((resolve,reject)=>{
