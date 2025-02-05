@@ -6,11 +6,19 @@ const weatherApiKey = config.WEATHER_API_KEY;
 
 const geocode = require("./geocode.js");
 
-const forecast = async (city) => {
-  const geoData = await geocode(encodeURIComponent(city));
-  return new Promise((resolve, reject) => {
-    const url = `https://api.weatherapi.com/v1/forecast.json?key=${weatherApiKey}&q=${geoData.lat},${geoData.lng}&days=5`;
+const forecast = async (city,coords) => {
+  let geoData={}
+  let url=``
+  if (coords){
+     geoData = coords;
+     url = `https://api.weatherapi.com/v1/forecast.json?key=${weatherApiKey}&q=${coords}&days=5`;
 
+  }else {
+     geoData = await geocode(encodeURIComponent(city));
+     url = `https://api.weatherapi.com/v1/forecast.json?key=${weatherApiKey}&q=${geoData.lat},${geoData.lng}&days=5`;
+
+  }
+  return new Promise((resolve, reject) => {
     request({ url, json: true }, (error, response) => {
       const result = response.body;
       if (error) {

@@ -25,15 +25,26 @@ app.get("", (req, res) => {
 });
 
 app.get("/weather", async (req, res) => {
+try{
   const city = req.query.address;
+  const coords=req.query.coords;
+  if (coords){
+    const results = await forecast(city,coords);
+    return res.send(results);
+
+  }
   if (!city) {
     return res.send({
         error:"please enter a valid address"
     })
   } else {
-    const results = await forecast(city);
+    const results = await forecast(city,coords);
     res.send(results);
   }
+}catch(e){
+console.error(e)
+res.redirect("")
+}
 });
 
 app.listen(port, () => {
